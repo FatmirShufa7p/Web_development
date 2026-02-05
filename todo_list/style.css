@@ -1,0 +1,126 @@
+body{
+    margin: 0px;
+    font-family: helvetica;
+    background-color: rgb(41, 40, 49);
+    color: white;
+}
+
+header{
+    display: flex;
+
+    text-align: center;
+    background-color: rgb(230, 97, 20);
+    color: white;
+    margin: 0px;
+    height: 10vh;
+    min-height: 40px;
+    user-select: none;
+
+    align-items: center;
+    justify-content: center;
+}
+
+header h1{
+    margin: 0px;
+}
+
+.task-checkbox{
+
+    accent-color: rgb(230, 97, 20);
+
+    height: 15px;
+    width: 15px;
+    margin: 0px 10px;
+    align-self: center;
+    display: block;
+
+    cursor: pointer;
+
+}
+
+.task{
+    background-color: #202027;
+    height: 50px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#main-box{
+    margin: 0 auto;
+    margin-top: 50px;
+    
+    text-align: center;
+    width: 550px;
+    height: 700px;
+    background-color: rgb(25, 25, 32);
+    border-radius: 10px;
+    border: 1px solid black;
+    user-select: none;
+
+    overflow: auto; /* allow scrolling */
+    scrollbar-width: none; /* Firefox: hide scrollbar */
+    -ms-overflow-style: none; /* IE 10+: hide scrollbar */
+
+}
+
+#main-box button{
+    background-color:rgb(230, 97, 20);
+    color: white;
+    padding: 15px 133px;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#main-box button:hover{
+    background-color:rgb(223, 152, 111);
+}
+
+#main-box::-webkit-scrollbar{
+    display: none; /* Chrome, Safari, Edge */
+}
+
+#main-box h3{
+    font-size: 30px;
+}
+
+#main-box input[type="text"]{
+    background-color:rgb(51, 51, 56);
+    border: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 300px;
+    height: 35px;
+    color: white;
+    font-size: 17px;
+    padding-left: 8px;
+    margin-bottom: 4px;
+}
+
+#input-area{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: inherit; /* keeps same background as container */
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 0px;
+    border-bottom: 1px solid black;
+}
+
+@media (max-width: 600px){
+    #main-box{
+        margin-top: 10px;
+        width: 350px;
+        height: 500px;
+    }
+
+    #main-box h3{
+        font-size: 25px;
+    }
+
+}
