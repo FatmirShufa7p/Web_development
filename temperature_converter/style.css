@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(32, 35, 36);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    color: rgb(223, 93, 93);
+}
+
+form{
+    user-select: none;
+    text-align: center;
+    border: 2px solid rgb(223, 93, 93);
+    border-radius: 30px;
+    width: 30vw;
+    min-width: 300px;
+    height: 40vh;
+    min-height: 300px;
+    margin: auto;
+    margin-top: 20vh;
+    padding: 20px;
+
+}
+
+#textBox{
+    background-color:rgb(223, 93, 93);
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    color: white;
+    padding: 5px;
+}
+
+form button{
+    background-color:rgb(223, 93, 93);
+    border: none;
+    margin-top: 15px;
+    color: white;
+    width: 100px;
+    border-radius: 5px;
+    padding: 10px 5px;
+}
+
+form button:active{
+    background-color:rgb(224, 153, 153);
+}
+
+#result{
+    font-size: 1.5em;
+}
+
+form input[type="radio"]{
+    accent-color: rgb(223, 93, 93);
+}
